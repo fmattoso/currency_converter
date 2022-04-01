@@ -2,6 +2,19 @@
 
 Projeto em Flutter de um Conversor de Moedas
 - Utiliza a API hgbrasil.com
+- Biblioteca http
+
+## Classe HgBrasilKey
+Para compilar, primeiro crie uma cadastro e um chave no [HG Brasil](https://hgbrasil.com), depois crie
+uma classe como descrito abaixo. Esta classe não está neste repositório pois contém a minha chave ;)
+
+class HgBrasilKey {
+
+  static const String _urlGetFinance = 'https://api.hgbrasil.com/finance/quotations?key=SUA_CHAVE';
+
+  static String get urlGetFinance {return _urlGetFinance;}
+
+}
 
 ## Getting Started
 
