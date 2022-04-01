@@ -158,7 +158,8 @@ Widget buildTextField(String label, String prefix, TextEditingController ctrl, v
   return TextField(
     controller: ctrl,
       onChanged: fun,
-      keyboardType: TextInputType.number,
+      // Funciona no Android e no iOS.
+      keyboardType: const TextInputType.numberWithOptions(decimal: true),
       decoration: InputDecoration(
         labelText: label,
         prefixText: '$prefix ',
