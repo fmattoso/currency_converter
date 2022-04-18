@@ -16,6 +16,16 @@ class HgBrasilKey {
 
 }
 
+## Erro [BUG] Unhandled exception: FormatException: Invalid number (at character 1) no flutter_launcher_icons-0.9.2
+
+Solved with replacing this line (~/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.9.2/lib/android.dart#308):
+
+      // final String minSdk = line.replaceAll(RegExp(r'[^\d]'), '');
+      // To this:
+      final String minSdk = "21"; // line.replaceAll(RegExp(r'[^\d]'), '');
+
+- [github - fluttercommunity](https://github.com/fluttercommunity/flutter_launcher_icons/issues/324)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

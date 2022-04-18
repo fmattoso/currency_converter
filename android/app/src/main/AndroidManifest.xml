@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.delphins.currency_converter">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="currency_converter"
+        android:label="Conversor de Moedas"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
